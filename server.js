@@ -27,6 +27,10 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects');
+});
+
 app.listen(port, () => {
     console.log(`Server started on ${port}`);
 });
